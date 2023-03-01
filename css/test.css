@@ -1,0 +1,266 @@
+.la-compagnie .contestEveryMonths{
+	padding:85px 0;
+}
+.la-compagnie .contestEveryMonths .content{
+	display:inline-block;
+	vertical-align:middle;
+	width:50%;
+}
+.la-compagnie .contestEveryMonths .image-wrapper{
+	display:inline-block;
+	vertical-align:middle;
+	width:42%;
+	margin-left:8%;
+}
+.la-compagnie .contestEveryMonths .image-wrapper img{
+	max-width:100%;
+	height:auto;
+}
+.la-compagnie .contestEveryMonths .content h3{
+	color:#8ac53f;
+	font-size:30px;
+	font-weight:300;
+	text-transform:uppercase;
+}
+.la-compagnie .contestEveryMonths .content h2{
+	color: #000;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+	line-height:50px;
+}
+.la-compagnie .contestEveryMonths .content p{
+	font-size:16px;
+	margin-bottom:20px;
+	line-height:23px;
+}
+.la-compagnie .simpleManagement{
+	background-image:url('imagesAudrey/BackgroundSimpleManagement.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:220px 0;
+	text-align:center;
+}
+.la-compagnie .simpleManagement h2{
+	color:#fff;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:57px;
+	margin-bottom:50px;
+}
+.la-compagnie .simpleManagement h3{
+	font-weight:700;
+	text-transform:uppercase;
+	color:#8ac53f;
+	font-size:47px;
+	line-height:45px;
+	margin-bottom:40px;
+}
+.la-compagnie .simpleManagement p{
+	color:#fff;
+	font-size:16px;
+	line-height:25px;
+	width:65%;
+	position:relative;
+	margin:0 auto;
+}
+.la-compagnie .testimonies{
+	position:relative;	
+	text-align:center;
+}
+.la-compagnie .testimonies::before{
+	background-image:url('imagesAudrey/CloverTopRightWithLightGreyDot.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:top right;
+	position:absolute;
+	top:0;
+	right:0;
+	width:100%;
+	height:366px;
+	content:'';
+	z-index:-1;
+}
+.la-compagnie .testimonies::after{
+	background-image:url('imagesAudrey/CloverBottomLeft.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:424px;
+	height:280px;
+	content:'';
+	z-index:-1;
+}
+.la-compagnie .testimonies .wrapper{
+	padding:70px 0 100px;	
+}
+.la-compagnie .testimonies .content.title h2{
+	text-transform:uppercase;
+	color:#000;
+	font-size:32px;
+	font-weight:700;
+	margin-bottom:50px;
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox:nth-child(n + 4) {
+	margin-top:40px;
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox{
+	width:31%;	
+	display:inline-block;
+	text-align:center;
+	padding-bottom:31%;
+	height:0;
+	position:relative;
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox + .testimonyBox{
+	margin-left:2%;	
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox:nth-child(3n - 2){
+	margin-left:0;	
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper{
+	border-radius:50%;
+	background-color:#000;
+	padding:70px 25px 30px;
+	/*height:277px;*/
+	border:10px solid #fff;
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(108,108,108,0.35);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(108,108,108,0.35);
+	box-shadow: 3px 3px 10px 0px rgba(108,108,108,0.35);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper h4{
+	color:#8ac53f;
+	text-transform:uppercase;
+	font-size:31px;
+	margin-bottom:5px;
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper p{
+	color:#fff;
+	line-height:25px;
+	font-size:16px;	
+	max-height:200px;
+	overflow:hidden;
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper .buttonWrapper{
+	position:absolute;
+	bottom:20px;
+	width:calc(100% - 50px);
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper span{
+	border:3px solid #8ac53f;
+	border-radius:50%;
+	-webkit-transition: border 0.5s; 
+	transition: border 0.5s;
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper span:hover{
+	border-color:#fff;
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper a{
+	color:#8ac53f;
+	font-size:24px;
+	width:22px;
+	-webkit-transition: color 0.5s; 
+	transition: color 0.5s;
+	display:inline-block;
+	position:relative;
+	top:2px;
+}
+.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper a:hover{
+	color:#fff;
+}
+@media (max-width: 1215px){
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox{
+		width:48%;
+		padding-bottom:48%;
+	}
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox:nth-child(3n - 2){
+		margin-left:0;	
+	}
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox:nth-child(2n - 1){
+		margin-left:2%;	
+	}
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox:nth-child(n + 2) {
+		margin-top:40px;
+	}
+}
+@media (max-width: 1023px){
+	.la-compagnie .contestEveryMonths .content,
+	.la-compagnie .contestEveryMonths .image-wrapper{
+		width:100%;
+	}
+	.la-compagnie .contestEveryMonths .image-wrapper{
+		margin-left:0;
+		margin-top:10px;
+	}
+	.la-compagnie .contestEveryMonths{
+		text-align:center;
+	}
+	.la-compagnie .simpleManagement{
+		background-position:center;
+	}
+}
+@media (max-width: 767px){
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox{
+		width:100%;
+		padding-bottom:100%;
+	}
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox:nth-child(2n - 1){
+		margin-left:0;	
+	}
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox + .testimonyBox {
+		margin-top:40px;
+	}
+	.la-compagnie .testimonies::before{
+		background-image:url('imagesAudrey/LightGreyDot.png');
+		background-repeat:repeat-x;
+		background-size:auto;
+		top:10px;
+		height:5px;		
+	}
+	.la-compagnie .testimonies::after{
+		background-image:none;
+	}
+}
+@media (max-width: 767px) and (min-width:485px){
+
+}
+@media (max-width: 480px){
+	.la-compagnie .contestEveryMonths .content h2{
+		font-size:46px;
+	}
+	.la-compagnie .simpleManagement{
+		padding:90px 0;
+	}
+	.la-compagnie .simpleManagement p{
+		width:100%;
+	}
+	.la-compagnie .simpleManagement h2{
+		font-size:36px;
+		margin-bottom:25px;
+	}
+	.la-compagnie .simpleManagement h3{
+		font-size:29px;
+		line-height:35px;
+		margin-bottom:20px;
+	}
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper p{
+		max-height:145px;
+	}
+}
+@media (max-width: 400px){
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper{
+		padding-top:50px;
+	}
+	.la-compagnie .testimonies .content.testimonyRow .testimonyBox .testimonyBoxWrapper h4{
+		font-size:24px;
+	}	
+}

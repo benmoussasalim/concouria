@@ -1,0 +1,3 @@
+ErrorDocument 403 /
+Deny from all
+ 

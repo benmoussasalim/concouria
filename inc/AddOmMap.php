@@ -1,0 +1,1172 @@
+<?php
+
+
+###############################
+#	Progexpert ds
+###############################
+
+$omMap = array (
+  0 =>
+  array (
+    'name' => 'Dashbord',
+    'name_table' => 'dashbord',
+    'desc' => 'Tableau de bord',
+    'index' => '',
+    'parent_table' => NULL,
+    'action' => 'add',
+    'file' => '',
+    'display' => 'Tableau de bord',
+    'entite' => 1,
+  ),
+  1 =>
+  array (
+    'name' => 'AuthyShortcut',
+    'name_table' => 'authy_shortcut',
+    'desc' => 'Raccourcis',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'authy',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Usagers / Raccourcis',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  2 =>
+  array (
+    'name' => 'Label',
+    'name_table' => 'label',
+    'desc' => 'Label',
+    'index' => '',
+    'sub_menu' => '6',
+    'parent_table' => '',
+    'parent_menu' => 'Config',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Config / Label',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  3 =>
+  array (
+    'name' => 'Mail',
+    'name_table' => 'mail',
+    'desc' => 'Courriel',
+    'index' => '',
+    'sub_menu' => '3',
+    'parent_table' => '',
+    'parent_menu' => 'Config',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Config / Courriel',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  4 =>
+  array (
+    'name' => 'Message',
+    'name_table' => 'message',
+    'desc' => 'Message',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => 'Language',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / Message',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  5 =>
+  array (
+    'name' => 'Abonnement',
+    'name_table' => 'abonnement',
+    'desc' => 'Renouvellement',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'sale',
+    'parent_menu' => '',
+    'child_table' => '["sale_taxe"]',
+    'rights_on_table' => NULL,
+    'display' => 'Abonnement / Renouvellement',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  6 =>
+  array (
+    'name' => 'CodePromo',
+    'name_table' => 'code_promo',
+    'desc' => 'Code Promotion',
+    'index' => '',
+    'sub_menu' => '8',
+    'parent_table' => '',
+    'parent_menu' => 'Vente',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Vente / Code Promotion',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  7 =>
+  array (
+    'name' => 'GrpTaxe',
+    'name_table' => 'grp_taxe',
+    'desc' => 'Groupe de taxe',
+    'index' => '',
+    'sub_menu' => '20',
+    'parent_table' => '',
+    'parent_menu' => 'Vente',
+    'child_table' => '["taxe"]',
+    'rights_on_table' => NULL,
+    'display' => 'Vente / Groupe de taxe',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  8 =>
+  array (
+    'name' => 'Sale',
+    'name_table' => 'sale',
+    'desc' => 'Abonnement',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'account',
+    'parent_menu' => 'Vente',
+    'child_table' => '["abonnement"]',
+    'rights_on_table' => NULL,
+    'display' => 'Vente / Abonnement',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  9 =>
+  array (
+    'name' => 'SaleTaxe',
+    'name_table' => 'sale_taxe',
+    'desc' => 'Taxe',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'abonnement',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Renouvellement / Taxe',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  10 =>
+  array (
+    'name' => 'Taxe',
+    'name_table' => 'taxe',
+    'desc' => 'Taxe',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'grp_taxe',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Groupe de taxe / Taxe',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  11 =>
+  array (
+    'name' => 'Block',
+    'name_table' => 'block',
+    'desc' => 'Block',
+    'index' => '',
+    'sub_menu' => '2',
+    'parent_table' => 'content',
+    'parent_menu' => 'SimpleWeb',
+    'child_table' => '["block_file"]',
+    'rights_on_table' => NULL,
+    'display' => 'SimpleWeb / Block',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  12 =>
+  array (
+    'name' => 'BlockFile',
+    'name_table' => 'block_file',
+    'desc' => 'Upload d\'images',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'block',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Block / Upload d\'images',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  13 =>
+  array (
+    'name' => 'BlockI18nVersion',
+    'name_table' => 'block_i18n_version',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  14 =>
+  array (
+    'name' => 'Concours',
+    'name_table' => 'concours',
+    'desc' => 'Concours',
+    'index' => '11',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '["concours_file"]',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / Concours',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 1,
+  ),
+  15 =>
+  array (
+    'name' => 'ConcoursFile',
+    'name_table' => 'concours_file',
+    'desc' => 'Photo',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'concours',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Concours / Photo',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  16 =>
+  array (
+    'name' => 'Content',
+    'name_table' => 'content',
+    'desc' => 'Contenu',
+    'index' => '',
+    'sub_menu' => '3',
+    'parent_table' => '',
+    'parent_menu' => 'SimpleWeb',
+    'child_table' => '["content_file","block"]',
+    'rights_on_table' => NULL,
+    'display' => 'SimpleWeb / Contenu',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  17 =>
+  array (
+    'name' => 'ContentFile',
+    'name_table' => 'content_file',
+    'desc' => 'Upload d\'images',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'content',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Contenu / Upload d\'images',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  18 =>
+  array (
+    'name' => 'ContentI18nVersion',
+    'name_table' => 'content_i18n_version',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  19 =>
+  array (
+    'name' => 'Faq',
+    'name_table' => 'faq',
+    'desc' => 'FAQ',
+    'index' => '10',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / FAQ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  20 =>
+  array (
+    'name' => 'Menu',
+    'name_table' => 'menu',
+    'desc' => 'Hiérarchie',
+    'index' => '',
+    'sub_menu' => '3',
+    'parent_table' => '',
+    'parent_menu' => 'SimpleWeb',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'SimpleWeb / Hiérarchie',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  21 =>
+  array (
+    'name' => 'MonthWinner',
+    'name_table' => 'month_winner',
+    'desc' => 'Mois',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'winner',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Gagnants / Mois',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  22 =>
+  array (
+    'name' => 'Slider',
+    'name_table' => 'slider',
+    'desc' => 'Slider',
+    'index' => '1',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '["slider_file"]',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / Slider',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  23 =>
+  array (
+    'name' => 'SliderFile',
+    'name_table' => 'slider_file',
+    'desc' => 'Upload d\'images',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'slider',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Slider / Upload d\'images',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  24 =>
+  array (
+    'name' => 'Statistique',
+    'name_table' => 'statistique',
+    'desc' => 'Statistiques',
+    'index' => '13',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / Statistiques',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  25 =>
+  array (
+    'name' => 'Temoignage',
+    'name_table' => 'temoignage',
+    'desc' => 'Témoignage',
+    'index' => '12',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / Témoignage',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  26 =>
+  array (
+    'name' => 'Winner',
+    'name_table' => 'winner',
+    'desc' => 'Gagnants',
+    'index' => '',
+    'sub_menu' => '100',
+    'parent_table' => '',
+    'parent_menu' => 'Abonnées',
+    'child_table' => '["month_winner"]',
+    'rights_on_table' => NULL,
+    'display' => 'Abonnées / Gagnants',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  27 =>
+  array (
+    'name' => 'Account',
+    'name_table' => 'account',
+    'desc' => 'Compte',
+    'index' => '',
+    'sub_menu' => '10',
+    'parent_table' => '',
+    'parent_menu' => 'Abonnées',
+    'child_table' => '[  "sale"]',
+    'rights_on_table' => NULL,
+    'display' => 'Abonnées / Compte',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  28 =>
+  array (
+    'name' => 'Authy',
+    'name_table' => 'authy',
+    'desc' => 'Usagers',
+    'index' => '',
+    'sub_menu' => '20',
+    'parent_table' => '',
+    'parent_menu' => 'Abonnées',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Abonnées / Usagers',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  29 =>
+  array (
+    'name' => 'AuthyLog',
+    'name_table' => 'authy_log',
+    'desc' => 'Usagers Log',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / Usagers Log',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  30 =>
+  array (
+    'name' => 'Config',
+    'name_table' => 'config',
+    'desc' => 'Config',
+    'index' => '100',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => 'Config',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Config / Config',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  31 =>
+  array (
+    'name' => 'GroupRight',
+    'name_table' => 'group_right',
+    'desc' => 'Groupe',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / Groupe',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  32 =>
+  array (
+    'name' => 'GroupRightAuthy',
+    'name_table' => 'group_right_authy',
+    'desc' => 'Group',
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => 'authy',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Usagers / Group',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  33 =>
+  array (
+    'name' => 'Pays',
+    'name_table' => 'pays',
+    'desc' => 'Pays',
+    'index' => '',
+    'sub_menu' => '60',
+    'parent_table' => '',
+    'parent_menu' => 'Abonnées',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Abonnées / Pays',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  34 =>
+  array (
+    'name' => 'Province',
+    'name_table' => 'province',
+    'desc' => 'Province',
+    'index' => '',
+    'sub_menu' => '70',
+    'parent_table' => '',
+    'parent_menu' => 'Abonnées',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Abonnées / Province',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  35 =>
+  array (
+    'name' => 'Region',
+    'name_table' => 'region',
+    'desc' => 'Région',
+    'index' => '',
+    'sub_menu' => '80',
+    'parent_table' => '',
+    'parent_menu' => 'Abonnées',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Abonnées / Région',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  36 =>
+  array (
+    'name' => 'Ville',
+    'name_table' => 'ville',
+    'desc' => 'Ville',
+    'index' => '',
+    'sub_menu' => '90',
+    'parent_table' => '',
+    'parent_menu' => 'Abonnées',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => 'Abonnées / Ville',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  37 =>
+  array (
+    'name' => 'LabelI18n',
+    'name_table' => 'label_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  38 =>
+  array (
+    'name' => 'MailI18n',
+    'name_table' => 'mail_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  39 =>
+  array (
+    'name' => 'MessageI18n',
+    'name_table' => 'message_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  40 =>
+  array (
+    'name' => 'TaxeI18n',
+    'name_table' => 'taxe_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  41 =>
+  array (
+    'name' => 'BlockI18n',
+    'name_table' => 'block_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  42 =>
+  array (
+    'name' => 'ConcoursI18n',
+    'name_table' => 'concours_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  43 =>
+  array (
+    'name' => 'ContentI18n',
+    'name_table' => 'content_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  44 =>
+  array (
+    'name' => 'FaqI18n',
+    'name_table' => 'faq_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  45 =>
+  array (
+    'name' => 'MonthWinnerI18n',
+    'name_table' => 'month_winner_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  46 =>
+  array (
+    'name' => 'SliderI18n',
+    'name_table' => 'slider_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  47 =>
+  array (
+    'name' => 'StatistiqueI18n',
+    'name_table' => 'statistique_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  48 =>
+  array (
+    'name' => 'TemoignageI18n',
+    'name_table' => 'temoignage_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  49 =>
+  array (
+    'name' => 'PaysI18n',
+    'name_table' => 'pays_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  50 =>
+  array (
+    'name' => 'ProvinceI18n',
+    'name_table' => 'province_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  51 =>
+  array (
+    'name' => 'RegionI18n',
+    'name_table' => 'region_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  52 =>
+  array (
+    'name' => 'VilleI18n',
+    'name_table' => 'ville_i18n',
+    'desc' => NULL,
+    'index' => '',
+    'sub_menu' => '',
+    'parent_table' => '',
+    'parent_menu' => '',
+    'child_table' => '',
+    'rights_on_table' => NULL,
+    'display' => ' Menu / ',
+    'add_select_popup' => NULL,
+    'entite' => 1,
+    'bkup' => 0,
+  ),
+  53 =>
+  array (
+    'name' => 'SimpleWeb',
+    'name_table' => 'SimpleWeb',
+    'desc' => 'SimpleWeb',
+    'index' => '10',
+    'sub_menu' => 0,
+    'parent_menu' => NULL,
+    'child_table' => NULL,
+    'action' => 'add',
+    'file' => '',
+    'display' => ' Menu / SimpleWeb',
+    'entite' => 0,
+  ),
+  54 =>
+  array (
+    'name' => 'Abonnées',
+    'name_table' => 'Abonnées',
+    'desc' => 'Abonnées',
+    'index' => '5',
+    'sub_menu' => 0,
+    'parent_menu' => NULL,
+    'child_table' => NULL,
+    'action' => 'add',
+    'file' => '',
+    'display' => ' Menu / Abonnées',
+    'entite' => 0,
+  ),
+  55 =>
+  array (
+    'name' => 'Vente',
+    'name_table' => 'Vente',
+    'desc' => 'Vente',
+    'index' => '2',
+    'sub_menu' => 0,
+    'parent_menu' => NULL,
+    'child_table' => NULL,
+    'action' => 'add',
+    'file' => '',
+    'display' => ' Menu / Vente',
+    'entite' => 0,
+  ),
+);
+$omMapDesc = array (
+  'AuthyShortcut' =>
+  array (
+    'dm' => 'Raccourcis',
+    'sm' => 'AuthyShortcut',
+  ),
+  'Label' =>
+  array (
+    'dm' => 'Label',
+    'sm' => 'Config',
+  ),
+  'Mail' =>
+  array (
+    'dm' => 'Courriel',
+    'sm' => 'Config',
+  ),
+  'Message' =>
+  array (
+    'dm' => 'Message',
+    'sm' => 'Language',
+  ),
+  'Abonnement' =>
+  array (
+    'dm' => 'Renouvellement',
+    'sm' => 'Abonnement',
+  ),
+  'CodePromo' =>
+  array (
+    'dm' => 'Code Promotion',
+    'sm' => 'Vente',
+  ),
+  'GrpTaxe' =>
+  array (
+    'dm' => 'Groupe de taxe',
+    'sm' => 'Vente',
+  ),
+  'Sale' =>
+  array (
+    'dm' => 'Abonnement',
+    'sm' => 'Vente',
+  ),
+  'SaleTaxe' =>
+  array (
+    'dm' => 'Taxe',
+    'sm' => 'SaleTaxe',
+  ),
+  'Taxe' =>
+  array (
+    'dm' => 'Taxe',
+    'sm' => 'Taxe',
+  ),
+  'Block' =>
+  array (
+    'dm' => 'Block',
+    'sm' => 'SimpleWeb',
+  ),
+  'BlockFile' =>
+  array (
+    'dm' => 'Upload d\'images',
+    'sm' => 'BlockFile',
+  ),
+  'BlockI18nVersion' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'BlockI18nVersion',
+  ),
+  'Concours' =>
+  array (
+    'dm' => 'Concours',
+    'sm' => 'Concours',
+  ),
+  'ConcoursFile' =>
+  array (
+    'dm' => 'Photo',
+    'sm' => 'ConcoursFile',
+  ),
+  'Content' =>
+  array (
+    'dm' => 'Contenu',
+    'sm' => 'SimpleWeb',
+  ),
+  'ContentFile' =>
+  array (
+    'dm' => 'Upload d\'images',
+    'sm' => 'ContentFile',
+  ),
+  'ContentI18nVersion' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'ContentI18nVersion',
+  ),
+  'Faq' =>
+  array (
+    'dm' => 'FAQ',
+    'sm' => 'Faq',
+  ),
+  'Menu' =>
+  array (
+    'dm' => 'Hiérarchie',
+    'sm' => 'SimpleWeb',
+  ),
+  'MonthWinner' =>
+  array (
+    'dm' => 'Mois',
+    'sm' => 'MonthWinner',
+  ),
+  'Slider' =>
+  array (
+    'dm' => 'Slider',
+    'sm' => 'Slider',
+  ),
+  'SliderFile' =>
+  array (
+    'dm' => 'Upload d\'images',
+    'sm' => 'SliderFile',
+  ),
+  'Statistique' =>
+  array (
+    'dm' => 'Statistiques',
+    'sm' => 'Statistique',
+  ),
+  'Temoignage' =>
+  array (
+    'dm' => 'Témoignage',
+    'sm' => 'Temoignage',
+  ),
+  'Winner' =>
+  array (
+    'dm' => 'Gagnants',
+    'sm' => 'Abonnées',
+  ),
+  'Account' =>
+  array (
+    'dm' => 'Compte',
+    'sm' => 'Abonnées',
+  ),
+  'Authy' =>
+  array (
+    'dm' => 'Usagers',
+    'sm' => 'Abonnées',
+  ),
+  'AuthyLog' =>
+  array (
+    'dm' => 'Usagers Log',
+    'sm' => 'AuthyLog',
+  ),
+  'Config' =>
+  array (
+    'dm' => 'Config',
+    'sm' => 'Config',
+  ),
+  'GroupRight' =>
+  array (
+    'dm' => 'Groupe',
+    'sm' => 'GroupRight',
+  ),
+  'GroupRightAuthy' =>
+  array (
+    'dm' => 'Group',
+    'sm' => 'GroupRightAuthy',
+  ),
+  'Pays' =>
+  array (
+    'dm' => 'Pays',
+    'sm' => 'Abonnées',
+  ),
+  'Province' =>
+  array (
+    'dm' => 'Province',
+    'sm' => 'Abonnées',
+  ),
+  'Region' =>
+  array (
+    'dm' => 'Région',
+    'sm' => 'Abonnées',
+  ),
+  'Ville' =>
+  array (
+    'dm' => 'Ville',
+    'sm' => 'Abonnées',
+  ),
+  'LabelI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'LabelI18n',
+  ),
+  'MailI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'MailI18n',
+  ),
+  'MessageI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'MessageI18n',
+  ),
+  'TaxeI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'TaxeI18n',
+  ),
+  'BlockI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'BlockI18n',
+  ),
+  'ConcoursI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'ConcoursI18n',
+  ),
+  'ContentI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'ContentI18n',
+  ),
+  'FaqI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'FaqI18n',
+  ),
+  'MonthWinnerI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'MonthWinnerI18n',
+  ),
+  'SliderI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'SliderI18n',
+  ),
+  'StatistiqueI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'StatistiqueI18n',
+  ),
+  'TemoignageI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'TemoignageI18n',
+  ),
+  'PaysI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'PaysI18n',
+  ),
+  'ProvinceI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'ProvinceI18n',
+  ),
+  'RegionI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'RegionI18n',
+  ),
+  'VilleI18n' =>
+  array (
+    'dm' => NULL,
+    'sm' => 'VilleI18n',
+  ),
+  'SimpleWeb' =>
+  array (
+    'dm' => 'SimpleWeb',
+    'sm' => 'SimpleWeb',
+  ),
+  'Abonnées' =>
+  array (
+    'dm' => 'Abonnées',
+    'sm' => 'Abonnées',
+  ),
+  'Vente' =>
+  array (
+    'dm' => 'Vente',
+    'sm' => 'Vente',
+  ),
+);

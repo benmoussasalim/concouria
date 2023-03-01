@@ -1,0 +1,1 @@
+!function(t){jQuery.fn.putCursorAtEnd=function(){return this.each(function(){if(t(this).focus(),this.setSelectionRange){var e=2*t(this).val().length;this.setSelectionRange(e,e)}else t(this).val(t(this).val());this.scrollTop=999999})}}(jQuery);
